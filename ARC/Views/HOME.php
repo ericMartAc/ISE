@@ -12,8 +12,9 @@
 </head>  
   	
 
-<body >
+<body>
 <header>
+
 <nav class="title">
 		<img src="../Public/fwork/Img/logo/arclogo.png" alt="logo_arc"/>
 	<div class="title_menu">
@@ -25,13 +26,16 @@
 </nav>
 <nav class="navbar-arc">
 	<ul>
-		<li><a href="#">ARCHIVO</a></li>
-		<li><a href="#">CLIENTES</a></li>
-		<li><a href="#">LOGISTICA</a></li>
-		<li><a href="SubProject/Operacion/op.html">OPERACIÓN</a></li>
-		<li><a href="#">ADMINISTRACIÓN</a></li>
+		<li><a href="#" onclick="Mostrar_navbarArc_submenu_archivo()">ARCHIVO</a></li>
+		<li><a href="#"  onclick="Mostrar_navbarArc_submenu_clientes()">CLIENTES</a></li>
+		<li><a href="#" onclick="Mostrar_navbarArc_submenu_logistica()">LOGISTICA</a></li>
+		<li><a href="#" onclick="Mostrar_navbarArc_submenu_operacion()">OPERACIÓN</a></li>
+		<li><a href="#"  onclick="Mostrar_navbarArc_submenu_administracion()">ADMINISTRACIÓN</a></li>
 	</ul> 
 </nav>
+<?php
+	include 'Menus/navbar-arc.php';
+?>
 </header>
 
 <section class="slider">
@@ -108,13 +112,13 @@
 	</div>
 </section>
 		
-<footer>
+<div id="footer">
 	<img src="../Public/fwork/Img/logo/arclogo.png" alt="logo_arc"/>
 	<p>
 	COPYRIGHT © 2019 KreaSoft S.A.S<br> Prohibida su reproducción total o parcial, así como su traducción a cualquier idioma sin autorización escrita de su titular. <br>ARController es un producto de ISE S.A.S. Nit. 9001231212-0.<br> <h4>Aviso de privacidad</h4>
 	</p>
 	<a>www.ise.com</a>
-</footer>
+</div>
 
 	<!-- SCRIPTS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
